@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import { Switch } from "@/components/ui/switch"
-import { Moon, Sun } from "lucide-react"
+import { FiSun, FiMoon } from "react-icons/fi"
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
@@ -20,9 +20,9 @@ export function ThemeToggle() {
 
   return (
     <div className="flex items-center gap-1">
-      <Sun size={16} className="text-gray-600 dark:text-gray-400" />
+      <FiSun size={16} className="text-gray-600 dark:text-gray-400" />
       <Switch checked={theme === "dark"} onCheckedChange={() => setTheme(theme === "dark" ? "light" : "dark")} />
-      <Moon size={16} className="text-gray-600 dark:text-gray-400" />
+      <FiMoon size={16} className="text-gray-600 dark:text-gray-400" />
     </div>
   )
 }

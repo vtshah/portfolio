@@ -1,5 +1,5 @@
 "use client";
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { FiGithub, FiTwitter, FiLinkedin, FiYoutube } from "react-icons/fi";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { ParticleBackground } from "@/components/particle-background";
@@ -21,24 +21,31 @@ export default function Portfolio() {
 
           <div className="flex items-center justify-center gap-4">
             <Link
-              href="#"
+              href="https://github.com/vtshah"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200"
             >
-              <Github size={20} />
+              <FiGithub size={20} />
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="#"
+              href="https://x.com/_VineetShah"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200"
             >
-              <Twitter size={20} />
+              <FiTwitter size={20} />
               <span className="sr-only">Twitter</span>
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/vtshah/"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200"
             >
-              <Linkedin size={20} />
+              <FiLinkedin size={20} />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              href="https://www.youtube.com/@VineetShahT"
+              className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200"
+            >
+              <FiYoutube size={20} />
               <span className="sr-only">LinkedIn</span>
             </Link>
 
