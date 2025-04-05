@@ -9,10 +9,10 @@ export default function Portfolio() {
   const [showParticles, setShowParticles] = useState(true);
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen flex flex-col">
       {showParticles && <ParticleBackground />}
 
-      <div className="max-w-3xl mx-auto px-4 py-12 relative z-10">
+      <div className="max-w-3xl mx-auto px-4 py-12 relative z-10 flex-grow">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold  mb-1">Vineet Shah</h1>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
@@ -147,17 +147,17 @@ export default function Portfolio() {
             </h3>
           </div>
         </section>
-
-        <footer className="mt-12 text-center text-sm text-gray-500 dark:text-gray-400">
-          Built with{" "}
-          <Link
-            href="https://exponent.run"
-            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
-          >
-            exponent.run
-          </Link>
-        </footer>
       </div>
+
+      <footer className="mt-12 pt-6 mb-8 text-center text-md text-gray-500 dark:text-gray-400">
+        Built with{" "}
+        <Link
+          href="https://exponent.run"
+          className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+        >
+          exponent.run
+        </Link>
+      </footer>
     </div>
   );
 }
